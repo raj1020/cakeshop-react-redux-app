@@ -1,7 +1,7 @@
 
 import {BUY_BURGER} from './burgerTypes';
 
-export const burgerActions = () => {
+export const buyBurger = () => {
     return {
         type: BUY_BURGER
     }
