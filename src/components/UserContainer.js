@@ -21,7 +21,10 @@ function UserContainer({userData, fetchUsers}) {
 
 const mapStateToProps = state => {
     return {
-        userData: state.user
+        userData: state.user  //Here, to access the "user", we need to access state. 
+        //Then we need to access the initial state or the latest changed state through root reducer.
+        // In the root reducer, the userReducer has been referred as "user". Hence, to access the "users" in the state,
+        // the term "state.user" has to be used.
     }
 };
 

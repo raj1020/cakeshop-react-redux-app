@@ -13,7 +13,9 @@ function CakeContainer(props) {
 
 const mapStateToProps = state => {
     return {
-        numOfCakes: state.cake.numOfCakes
+        numOfCakes: state.cake.numOfCakes //Here, to access the "numOfCakes", we need to access state then 
+        //cake and then numOfCakes. It is because to access numOfCakes in the initial state in the 
+        // reducer, it has to be accessed thorough root reducer, where cakeReducer has been referred as "cake".
     }
 }
 
